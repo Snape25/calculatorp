@@ -1,0 +1,29 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" type="text/css", href="{% static 'calc/css/index.css' %}">
+
+
+<body>
+
+
+     <h1>
+        SUp BOIS
+     </h1>
+
+     <form action = "" method = "POST"> 
+        {% csrf_token %}  
+
+
+        <label for="your_name">Your height: </label> 
+        <input id="your_name" type="number" name="height"> 
+
+        <label for="your_name">Your weight </label> 
+        <input id="your_name" type="number" name="weight"> 
+
+
+
+        <input type="submit" value="OK"> 
+    </form> 
+
+
+</body>
